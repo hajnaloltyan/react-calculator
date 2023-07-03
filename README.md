@@ -147,6 +147,8 @@ Deployed by GitHub Pages.
 
 <!-- FUTURE FEATURES -->
 
+- Add more operation buttons to the Calculator
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 
