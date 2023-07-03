@@ -21,7 +21,7 @@ const Calculator = () => (
     <button type="button" className="Btn-text">2</button>
     <button type="button" className="Btn-text">3</button>
     <button type="button" className="Btn-text">+</button>
-    <button type="button" className="Btn-text">0</button>
+    <button type="button" className="Btn-text Btn-0">0</button>
     <button type="button" className="Btn-text">.</button>
     <button type="button" className="Btn-text">=</button>
   </section>
