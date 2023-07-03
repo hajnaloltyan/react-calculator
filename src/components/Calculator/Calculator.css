@@ -1,12 +1,6 @@
 .calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto repeat(5, 1fr);
-  gap: 2px;
-  background-color: #ddd;
-  border: 1px solid #ccc;
-  padding: 5px;
-  width: 35vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .result {
@@ -15,28 +9,4 @@
   padding: 10px;
   text-align: right;
   color: #fff;
-}
-
-.btn-text {
-  grid-column: span 1;
-  grid-row: span 1;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.btn-text:hover {
-  background-color: rgb(174, 255, 228);
-}
-
-.btn-0 {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-
-.orange {
-  background-color: #fda469;
 }
