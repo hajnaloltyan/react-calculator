@@ -1,6 +1,7 @@
 import React from 'react';
 import './Calculator.css';
 import Buttons from '../Buttons/Buttons';
+import calculate from '../logic/calculate';
 
 const Calculator = () => (
   <section className="calculator">
