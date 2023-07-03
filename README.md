@@ -4,14 +4,12 @@
   <img src="./src/images/hajnalkaoltyan.png" alt="logo" width="140"  height="auto" />
 </div>
 
-<!-- Don't forget to edit all [Project Name] parts of this file, add the License and the Logo, plus include the live link and git clone link!!! -->
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Project Name\] ](#-project-name-)
+- [📖 Math Magicians ](#-math-magicians-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -32,16 +30,16 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Project Name] <a name="about-project"></a>
+# 📖 Math Magicians <a name="about-project"></a>
 
-This is my Microverse **[Project Name]** site, created with HTML, CSS and mobile first approach.
+This is my Microverse **Math Magicians** site, created with React and CSS.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>HTML</summary>
+  <summary>React</summary>
 </details>
 
 <details>
@@ -49,15 +47,15 @@ This is my Microverse **[Project Name]** site, created with HTML, CSS and mobile
 </details>
 
 <details>
-<summary>Git</summary>
+<summary>GitFlow</summary>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Responsive**
-- **GitHub WorkFlow**
+- **React**
+- **GitFlow**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,7 +63,7 @@ This is my Microverse **[Project Name]** site, created with HTML, CSS and mobile
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://hajnaloltyan.github.io/[project-name])
+- [Live Demo Link](https://hajnaloltyan.github.io/react-calculator)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,8 +86,8 @@ In order to run this project you need:
 
 Clone this repository to your desired folder by opening the terminal and running the following command:
 
-```
-  git clone git@github.com:hajnaloltyan/[project-name].git
+```sh
+  git clone git@github.com:hajnaloltyan/react-calculator.git
 
 ```
 
@@ -98,31 +96,35 @@ Clone this repository to your desired folder by opening the terminal and running
 
 Install this project with:
 
-```
+```sh
   npm install
 
 ```
 
 ### Usage
 
-To run the project:
+To run the project use the following command:
 
-  Open the Project in your code editor and start Live Server inside the index.html file. 
+```sh
+  npm start
+
+```
 
 ### Run tests
 
 To run tests, run the following commands:
 
-  For HTML linter errors:
-
-```
-  npx hint .
-
-```
   For CSS linter errors:
 
-```
+```sh
   npx stylelint "**/*.{css,scss}"
+
+```
+
+  For ESLint linter errors:
+
+```sh
+  npx eslint "**/*.{js,jsx}"
 
 ```
 
@@ -139,7 +141,7 @@ Deployed by GitHub Pages.
 👤 **Hajnalka Oltyan**
 
 - GitHub: [@hajnaloltyan](https://github.com/hajnaloltyan)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hajnalka-oltyan/)
+- LinkedIn: [Hajnal Oltyan]](https://www.linkedin.com/in/hajnalka-oltyan/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
