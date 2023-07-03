@@ -1,0 +1,12 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  grid-column: 1 / -1;
+  background-color: #929090;
+  padding: 10px;
+  text-align: right;
+  color: #fff;
+}

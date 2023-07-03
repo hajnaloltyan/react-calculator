@@ -147,8 +147,10 @@ Deployed by GitHub Pages.
 
 <!-- FUTURE FEATURES -->
 
+
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Add more operation buttons to the Calculator
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
