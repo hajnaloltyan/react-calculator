@@ -3,9 +3,9 @@ import './App.css';
 import Calculator from './components/Calculator/Calculator';
 
 const App = () => (
-  <div>
+  <main className="app">
     <Calculator />
-  </div>
+  </main>
 );
 
 export default App;
