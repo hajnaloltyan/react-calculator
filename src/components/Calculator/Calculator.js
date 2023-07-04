@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
 import Buttons from '../Buttons/Buttons';
 import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <section className="calculator">
-    <h2 className="result">0</h2>
-    <Buttons />
-  </section>
-);
+const Calculator = () => {
+  const [calculatorData, setCalculatorData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const handleButtonClick = (buttonName) => {
+    const newCalculatorData = calculate(calculatorData, buttonName);
+    setCalculatorData(newCalculatorData);
+  };
+
+  const displayResult = calculatorData.next || calculatorData.total || '0';
+
+  return (
+    <section className="calculator">
+      <h2 className="result">{displayResult}</h2>
+      <Buttons onButtonClick={handleButtonClick} />
+    </section>
+  );
+};
 
 export default Calculator;
