@@ -1,28 +1,43 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Buttons.css';
 
-const Buttons = () => (
-  <article className="buttons">
-    <button type="button" className="btn-text">AC</button>
-    <button type="button" className="btn-text">+/-</button>
-    <button type="button" className="btn-text">%</button>
-    <button type="button" className="btn-text orange">÷</button>
-    <button type="button" className="btn-text">7</button>
-    <button type="button" className="btn-text">8</button>
-    <button type="button" className="btn-text">9</button>
-    <button type="button" className="btn-text orange">*</button>
-    <button type="button" className="btn-text">4</button>
-    <button type="button" className="btn-text">5</button>
-    <button type="button" className="btn-text">6</button>
-    <button type="button" className="btn-text orange">-</button>
-    <button type="button" className="btn-text">1</button>
-    <button type="button" className="btn-text">2</button>
-    <button type="button" className="btn-text">3</button>
-    <button type="button" className="btn-text orange">+</button>
-    <button type="button" className="btn-text btn-0">0</button>
-    <button type="button" className="btn-text">.</button>
-    <button type="button" className="btn-text orange">=</button>
-  </article>
-);
+const Buttons = ({ onButtonClick }) => {
+  const handleClick = (buttonName) => {
+    onButtonClick(buttonName);
+  };
+
+  const buttonNames = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+
+  const renderButton = (buttonName, index) => {
+    let classNames = 'btn-text';
+    if ((index + 1) % 4 === 0) {
+      classNames += ' orange';
+    } else if (index === 16) {
+      classNames += ' btn-0';
+    }
+
+    return (
+      <button
+        key={buttonName}
+        className={classNames}
+        onClick={() => handleClick(buttonName)}
+        type="button"
+      >
+        {buttonName}
+      </button>
+    );
+  };
+
+  return (
+    <article className="buttons">
+      {buttonNames.map(renderButton)}
+    </article>
+  );
+};
+
+Buttons.propTypes = {
+  onButtonClick: PropTypes.func.isRequired,
+};
 
 export default Buttons;
