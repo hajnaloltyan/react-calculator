@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import 'dotenv/config';
 import './Quotes.css';
 
 const Quotes = () => {
@@ -7,9 +8,17 @@ const Quotes = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await fetch(, { method: 'GET' });
+        const result = await fetch('https://api.api-ninjas.com/v1/quotes?category=failure&limit=2', {
+          method: 'GET',
+          headers: { 'X-Api-Key': process.env.REACT_APP_NINJA_KEY },
+          contentType: 'application/json',
+        });
         const data = await result.json();
-        setQuote(data);
+        const quotesWithIds = data.map((quote, index) => ({
+          ...quote,
+          id: index + 1,
+        }));
+        return setQuote(quotesWithIds);
       } catch (error) {
         return {
           Response: 'False',
@@ -21,7 +30,17 @@ const Quotes = () => {
   }, [setQuote]);
 
   return (
-    <div>Quotes</div>
+    <article className="quotesContainer">
+      <h2>Today&apos;s Quotes:</h2>
+      {quote.map((item) => (
+        <div key={item.id} className="quoteItem">
+          <p>
+            {`"${item.quote}"`}
+          </p>
+          <h4 className="author">{item.author}</h4>
+        </div>
+      ))}
+    </article>
   );
 };
 

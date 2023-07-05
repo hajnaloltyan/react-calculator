@@ -1,0 +1,11 @@
+.quotesContainer {
+  width: 70vh;
+}
+
+.quoteItem {
+  font-style: italic;
+}
+
+.author {
+  text-align: right;
+}
