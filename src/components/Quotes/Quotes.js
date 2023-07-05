@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import env from 'react-dotenv';
 import './Quotes.css';
 
 const Quotes = () => {
@@ -10,13 +9,15 @@ const Quotes = () => {
   useEffect(() => {
     const delay = 3000;
 
-    const fetchData = () => fetch('https://api.api-ninjas.com/v1/quotes?category=failure&limit=2', {
+    const fetchData = () => fetch('https://api.api-ninjas.com/v1/quotes?category=computers&limit=2', {
       method: 'GET',
-      headers: { 'X-Api-Key': env.NINJA_KEY },
+      headers: { 'X-Api-Key': process.env.REACT_APP_API_KEY },
       contentType: 'application/json',
     })
       .then((response) => {
         if (!response.ok) {
+          setIsLoading(false);
+          setHaveError(true);
           throw new Error('Network response was not ok');
         }
         return response.json();

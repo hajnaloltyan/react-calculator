@@ -1,6 +1,6 @@
 .quotesContainer {
   width: 40vw;
-  height: 30vh;
+  height: 28vh;
 }
 
 .quoteItem {
@@ -15,11 +15,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 20vh;
 }
 
 .loading {
-  border: 10px solid #000000; /* Light grey */
-  border-top: 10px solid #8dff60; /* Blue */
+  border: 10px solid #fff; /* Light grey */
+  border-top: 10px solid #44c510; /* Blue */
   border-radius: 50%;
   width: 40px;
   height: 40px;
