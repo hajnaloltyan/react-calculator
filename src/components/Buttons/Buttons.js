@@ -11,7 +11,7 @@ const Buttons = ({ onButtonClick }) => {
 
   const renderButton = (buttonName, index) => {
     let classNames = 'btn-text';
-    if ((index + 1) % 4 === 0) {
+    if ((index + 1) % 4 === 0 || index === 18) {
       classNames += ' orange';
     } else if (index === 16) {
       classNames += ' btn-0';
