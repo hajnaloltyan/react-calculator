@@ -3,7 +3,7 @@ import './Home.css';
 
 const Home = () => (
   <section>
-    <h2>
+    <h2 className="page-title">
       Welcome to Our Page!
     </h2>
 

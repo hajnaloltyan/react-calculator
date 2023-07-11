@@ -10,7 +10,6 @@
 }
 
 a {
-  text-decoration: none;
   font-size: 20px;
   text-decoration: underline transparent;
   color: #000;
@@ -25,4 +24,5 @@ ul {
   color: #d600c4;
   text-decoration-color: #d600c4;
   text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
 }

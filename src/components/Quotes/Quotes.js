@@ -48,7 +48,7 @@ const Quotes = () => {
 
   return (
     <section className="quotesContainer">
-      <h2>Today&apos;s Quotes:</h2>
+      <h2 className="pagetitle">Today&apos;s Quotes:</h2>
       {isLoading && (
         <div className="loadingContainer">
           <div className="loading" />

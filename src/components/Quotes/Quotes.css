@@ -31,3 +31,8 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.pagetitle {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
