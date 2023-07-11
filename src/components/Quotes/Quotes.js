@@ -47,8 +47,8 @@ const Quotes = () => {
   }, []);
 
   return (
-    <article className="quotesContainer">
-      <h2>Today&apos;s Quotes:</h2>
+    <section className="quotesContainer">
+      <h2 className="pagetitle">Today&apos;s Quotes:</h2>
       {isLoading && (
         <div className="loadingContainer">
           <div className="loading" />
@@ -70,7 +70,7 @@ const Quotes = () => {
             <h4 className="author">{item.author}</h4>
           </div>
         )))}
-    </article>
+    </section>
   );
 };
 

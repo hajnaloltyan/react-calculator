@@ -1,13 +1,20 @@
 import React from 'react';
-import './App.css';
-import Calculator from './components/Calculator/Calculator';
-import Quotes from './components/Quotes/Quotes';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import NavHome from './routes/NavHome';
+import NavCalculator from './routes/NavCalculator';
+import NavQuotes from './routes/NavQuotes';
 
 const App = () => (
-  <main className="app">
-    <Calculator />
-    <Quotes />
-  </main>
+  <Router>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<NavHome />} />
+        <Route path="calculator" element={<NavCalculator />} />
+        <Route path="quotes" element={<NavQuotes />} />
+      </Route>
+    </Routes>
+  </Router>
 );
 
 export default App;

@@ -1,0 +1,28 @@
+.navbar {
+  width: 20vw;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: underline transparent;
+  color: #000;
+  font-weight: 600;
+}
+
+ul {
+  padding: 0;
+}
+
+.active {
+  color: #d600c4;
+  text-decoration-color: #d600c4;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
