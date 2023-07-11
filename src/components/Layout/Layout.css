@@ -1,10 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 2% 5%;
 }
 
 .title {
   font-size: 40px;
   font-weight: 800;
+  color: #d600c4;
+}
+
+.content {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
 }

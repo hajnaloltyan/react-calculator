@@ -10,11 +10,12 @@ const links = [
 
 const Navbar = () => (
   <nav className="navbar">
-    <ul>
+    <ul className="navlinks">
       {links.map(({ path, text }) => (
         <li key={text}>
           <NavLink
             to={path}
+            activeClassName="active"
           >
             {text}
           </NavLink>
