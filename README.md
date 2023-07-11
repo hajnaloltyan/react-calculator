@@ -79,6 +79,7 @@ In order to run this project you need:
 
   - Code editor
   - Node
+  - Registered account at the following external API: [API NINJAS](https://api-ninjas.com/api/quotes)
 
 
 
@@ -101,7 +102,17 @@ Install this project with:
 
 ```
 
+
 ### Usage
+
+Create in the project's root directory a **.env** file without installing any additional dependency.
+
+Inside that file add your own API key with the following format:
+
+```sh
+  REACT_APP_API_KEY='your API key'
+
+```
 
 To run the project use the following command:
 
@@ -131,6 +142,11 @@ To run tests, run the following commands:
 ### Deployment
 
 Deployed by GitHub Pages.
+
+```sh
+  npx run deploy
+
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
