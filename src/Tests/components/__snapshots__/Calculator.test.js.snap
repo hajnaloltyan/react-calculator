@@ -11,6 +11,7 @@ Object {
         <h2
           class="result"
           data-testid="result"
+          title="result"
         >
           0
         </h2>
@@ -142,6 +143,7 @@ Object {
       <h2
         class="result"
         data-testid="result"
+        title="result"
       >
         0
       </h2>
