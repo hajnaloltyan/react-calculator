@@ -19,7 +19,7 @@ const Calculator = () => {
 
   return (
     <section className="calculator">
-      <h2 className="result" data-testid="result">{displayResult}</h2>
+      <h2 title="result" className="result" data-testid="result">{displayResult}</h2>
       <Buttons onButtonClick={handleButtonClick} />
     </section>
   );
