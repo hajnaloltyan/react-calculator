@@ -15,7 +15,7 @@ const Navbar = () => (
         <li key={text}>
           <NavLink
             to={path}
-            activeClassName="active"
+            className="active"
           >
             {text}
           </NavLink>

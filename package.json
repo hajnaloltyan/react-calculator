@@ -1,10 +1,10 @@
 {
+  "homepage": "https://github.com/hajnaloltyan/react-calculator",
   "name": "react-calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "big.js": "^6.2.1",
     "localforage": "^1.10.0",
@@ -13,7 +13,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
-    "react-scripts": "2.1.8",
+    "react-scripts": "5.0.1",
+    "react-test-renderer": "^18.2.0",
     "sort-by": "^1.2.0",
     "web-vitals": "^2.1.4"
   },
@@ -54,6 +55,7 @@
     "@babel/plugin-syntax-jsx": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
+    "@testing-library/react": "^14.0.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
