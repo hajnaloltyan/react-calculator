@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Layout component Check if the Layout component render correctly 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <h1
+      className="title"
+    >
+      Math Magicians
+    </h1>
+    <nav
+      className="navbar"
+    >
+      <ul
+        className="navlinks"
+      >
+        <li>
+          <a
+            aria-current="page"
+            className="active active"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="active"
+            href="/calculator"
+            onClick={[Function]}
+          >
+            Calculator
+          </a>
+        </li>
+        <li>
+          <a
+            className="active"
+            href="/quotes"
+            onClick={[Function]}
+          >
+            Quotes
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>,
+  <main
+    className="content"
+  />,
+]
+`;
